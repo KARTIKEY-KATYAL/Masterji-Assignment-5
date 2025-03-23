@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: #003459;
+    background-color: #0F0E0E;
     display: flex;
     align-items: center;
     height: 100vh;
@@ -33,12 +33,13 @@ body{
 }
 
 .box{
-    background-color: #FFFFFF;
+    background-color: #FBF5F3;
     width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     border: 1px solid black;
+    border-radius: 4px;
 }
 
 .boxheading{
@@ -52,8 +53,16 @@ body{
 }
 
 .textbox{
-    width: 100%;
+    width: 95%;
     border: 2px solid black;
     font-size: x-large;
 }
 
+#inputtext{
+    background-color: #00171F;
+    color: #FFFFFF;
+}
+#outputtext{
+    background-color: #003459;
+    color: #F2E3BC;
+}
