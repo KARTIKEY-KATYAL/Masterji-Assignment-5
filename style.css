@@ -61,6 +61,11 @@ body {
     border: 2px solid black;
 }
 
+#outputbox{
+    background-color: gray;
+    color: #FBF5F3;
+}
+
 #inputtext {
     background-color: #00171F;
     color: #FFFFFF;
@@ -68,8 +73,8 @@ body {
 }
 
 #outputtext {
-    background-color: #003459;
-    color: #FFFFFF;
+    background-color: #FFFFFF;
+    color: #000000;
     height: 100%;
     font-family: "Ubuntu", sans-serif;
     font-weight: 700;
@@ -94,6 +99,8 @@ body {
     font-weight: 700;
     cursor: pointer;
     white-space: nowrap;
+    margin-top: 2px;
+    margin-bottom: 2px;
 }
 
 .boxheading {
@@ -153,16 +160,19 @@ body {
 /* Code block styling */
 pre {
     background-color: #1e1e1e;
+    color: #FFFFFF;
     padding: 1em;
     border-radius: 5px;
     overflow-x: auto;
     margin: 1em 0;
+    width: 95%;
 }
 
 /* Inline code styling */
 code {
     font-family: 'Courier New', Courier, monospace;
     padding: 0.2em 0.4em;
+    color: #FFFFFF;
     background-color: #1e1e1e;
     border-radius: 3px;
 }
