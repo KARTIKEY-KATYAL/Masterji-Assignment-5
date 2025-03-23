@@ -170,3 +170,93 @@ pre code {
     padding: 0;
     background-color: transparent;
 }
+
+/* Add responsive styles */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        gap: 20px;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .box {
+        width: 100%;
+        min-height: 300px;
+    }
+
+    .heading {
+        font-size: x-large;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .topbar {
+        padding: 0 10px;
+    }
+
+    .btn {
+        padding: 4px 10px;
+        font-size: small;
+    }
+
+    .boxheading {
+        font-size: large;
+    }
+
+    #inputtext,
+    #outputtext {
+        font-size: large;
+    }
+}
+
+/* Small mobile devices */
+@media screen and (max-width: 480px) {
+    .container {
+        width: 98%;
+        gap: 10px;
+    }
+
+    .heading {
+        font-size: large;
+    }
+
+    .btn {
+        padding: 3px 8px;
+        font-size: x-small;
+    }
+
+    .boxheading {
+        font-size: medium;
+    }
+
+    #inputtext,
+    #outputtext {
+        font-size: medium;
+    }
+
+    .toast {
+        padding: 8px 16px;
+        font-size: small;
+    }
+}
+
+/* Adjust height for landscape orientation on mobile */
+@media screen and (max-height: 500px) {
+    body {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .container {
+        height: auto;
+    }
+}
+
+/* Larger screens */
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 90%;
+        max-width: 1400px;
+    }
+}
