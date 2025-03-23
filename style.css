@@ -1,10 +1,12 @@
-*{
+/* Reset default styles */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+/* Main layout styles */
+body {
     background-color: #0F0E0E;
     display: flex;
     align-items: center;
@@ -13,18 +15,18 @@ body{
     gap: 10px;
 }
 
-.heading{
+.heading {
     color: #FFFFFF;
     font-family: "Rubik", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 700;
-        font-style: normal;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
     align-items: center;
     margin-top: 3px;
     font-size: xx-large;
 }
 
-.container{
+.container {
     height: 100vh;
     display: flex;
     width: 95%;
@@ -32,7 +34,7 @@ body{
     gap: 70px;
 }
 
-.box{
+.box {
     background-color: #FBF5F3;
     width: 50%;
     display: flex;
@@ -42,27 +44,129 @@ body{
     border-radius: 4px;
 }
 
-.boxheading{
+.boxheading {
     font-family: "Noto Sans", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 600;
-        font-style: normal;
-        font-variation-settings:
-            "wdth" 100;
-        font-size: x-large;
-}
-
-.textbox{
-    width: 95%;
-    border: 2px solid black;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
     font-size: x-large;
 }
 
-#inputtext{
+.textbox {
+    width: 95%;
+    border: 2px solid black;
+}
+
+#inputtext {
     background-color: #00171F;
     color: #FFFFFF;
+    font-size: x-large;
 }
-#outputtext{
+
+#outputtext {
     background-color: #003459;
-    color: #F2E3BC;
+    color: #FFFFFF;
+    height: 100%;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.btn {
+    width: fit-content;
+    background-color: #CA5310;
+    flex-wrap: nowrap;
+    padding: 5px 15px;
+    border-radius: 2px;
+    color: #27187E;
+    font-size: medium;
+    font-weight: 700;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.boxheading {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.highlight {
+    background-color: #FFFFFF;
+    color: #27187E;
+}
+
+.toast {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #333;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 4px;
+    z-index: 1000;
+    animation: fadeIn 0.3s, fadeOut 0.3s 2.7s;
+}
+
+.loading {
+    opacity: 0.6;
+    cursor: wait;
+}
+
+/* Toast notification animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
+
+/* Code block styling */
+pre {
+    background-color: #1e1e1e;
+    padding: 1em;
+    border-radius: 5px;
+    overflow-x: auto;
+    margin: 1em 0;
+}
+
+/* Inline code styling */
+code {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0.2em 0.4em;
+    background-color: #1e1e1e;
+    border-radius: 3px;
+}
+
+/* Reset padding for code inside pre blocks */
+pre code {
+    padding: 0;
+    background-color: transparent;
 }
