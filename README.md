@@ -1,84 +1,97 @@
-# Masterji-Assignment-5
+# Markdown.md Preview
 
-## Markdown.md
-This is a a simple readme markdown previewer that allows users to enter markdown text in a textarea and display the formatted preview in real time
-![alt text](image.png)
+A real-time Markdown editor and previewer with syntax highlighting. Type Markdown in the left panel and instantly see the formatted result in the right panel.
 
-## Tech Stack
+![Demo Screenshot](image.png)
 
-- HTML
-- CSS
-- JavaScript
+## ✨ Features
 
-## External Scripts Used
+### 1. Real-time Preview
+- Instant conversion of Markdown to HTML
+- Live updates as you type
+- Loading states for large content
+- Error handling with toast notifications
 
+### 2. Rich Markdown Support
+- **Headers** (H1 through H6)
+- **Text Formatting**
+  - Bold (`**text**`)
+  - Italic (`*text*`)
+  - Strikethrough (`~~text~~`)
+- **Lists**
+  - Ordered lists (`1. Item`)
+  - Unordered lists (`- Item`)
+- **Links & Images**
+  - Links (`[text](url)`)
+  - Images (`![alt](url)`)
+- **Code**
+  - Inline code (\`code\`)
+  - Code blocks with syntax highlighting (```language)
+- **Tables**
+- **Blockquotes**
+- **Horizontal Rules**
+
+### 3. Advanced Features
+- Syntax highlighting for 185+ programming languages
+- GitHub Flavored Markdown support
+- Copy to clipboard functionality
+- Reset/Clear editor option
+- Mobile responsive design
+- Toast notifications for actions
+- Error handling
+
+## 🚀 Quick Start
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/markdown-preview.git
 ```
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+2. Open `index.html` in your browser
+
+3. Start typing Markdown in the left panel!
+
+## 🛠️ Tech Stack
+
+- **Frontend:**
+  - HTML5
+  - CSS3 (with responsive design)
+  - Vanilla JavaScript
+
+- **Libraries:**
+  - [marked.js](https://marked.js.org/) - Markdown parser and compiler
+  - [highlight.js](https://highlightjs.org/) - Syntax highlighting
+  
+## 📦 Installation
+
+No installation required! Just clone and open `index.html` in your browser.
+
+## 🎯 Usage Examples
+
+### Basic Markdown
+```markdown
+# Heading 1
+## Heading 2
+
+**Bold text**
+*Italic text*
+
+- List item 1
+- List item 2
 ```
 
-## Features Implemented
-
-1. Real-time Markdown Preview
-   - Instant conversion of markdown to HTML
-   - Live preview updates as you type
-
-```
-   function markdowntext() {
-  const output = document.getElementById("outputtext");
-  output.classList.add("loading");
-
-  try {
-    const inputtext = input.value;
-    // Use setTimeout to prevent UI blocking during parsing
-    setTimeout(() => {
-      output.innerHTML = marked.parse(inputtext);
-      output.classList.remove("loading");
-    }, 0);
-  } catch (error) {
-    showToast("Error parsing markdown");
-    output.classList.remove("loading");
-  }
+### Code Blocks
+```javascript
+function hello() {
+    console.log("Hello, world!");
 }
 ```
-2. Syntax Highlighting
-   - Support for code blocks
-   - Multiple programming language highlighting
 
-```
-marked.setOptions({
-  breaks: true, // Convert line breaks to <br>
-  gfm: true, // Enable GitHub Flavored Markdown
-  highlight: function (code, language) {
-    // Syntax highlighting for code blocks
-    if (language && hljs.getLanguage(language)) {
-      try {
-        return hljs.highlight(code, { language: language }).value;
-      } catch (err) {
-        console.error(err);
-        return code;
-      }
-    }
-    return hljs.highlightAuto(code).value;
-  },
-});
+## 🌐 Live Demo
 
-// Initialize highlight.js
-hljs.highlightAll();
-```
-3. Basic Markdown Support
-   - Headers
-   - Lists (ordered and unordered)
-   - Links and Images
-   - Code blocks
-   - Bold and Italic text
-
-## How to Use
-
-1. Clone the repository
-2. Open index.html in your browser
-3. Start typing markdown in the left panel
-4. See the formatted preview in the right panel
+Try it out: [Markdown.md Preview](https://markdownmd.netlify.app/)
 
 
-### Live Preview : https://markdownmd.netlify.app/
+## 👥 Author
+
+Your Name - [Karttikey Katyal](https://github.com/KARTIKEY-KATYAL)
