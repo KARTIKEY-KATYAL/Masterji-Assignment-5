@@ -27,6 +27,7 @@ function markdowntext() {
  */
 function resetinput() {
   input.value = "";
+  output.textContent = ""
 }
 
 /**
@@ -68,6 +69,7 @@ function copyoutput() {
 
 // Get DOM elements
 const input = document.getElementById("inputtext");
+const output = document.getElementById("outputtext");
 const reset = document.getElementById("resetbtn");
 const copy = document.getElementById("copybtn");
 

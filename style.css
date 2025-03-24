@@ -43,7 +43,8 @@ body {
     flex-direction: column;
     align-items: center;
     border: 1px solid black;
-    border-radius: 4px;
+    border-radius: 5px;
+    margin-bottom: 15px;
 }
 
 .boxheading {
@@ -63,7 +64,7 @@ body {
 
 #outputbox{
     background-color: gray;
-    color: #FBF5F3;
+    color: #27187E;
 }
 
 #inputtext {
@@ -73,12 +74,19 @@ body {
 }
 
 #outputtext {
-    background-color: #FFFFFF;
-    color: #000000;
+    background-color: #ffffff;
+    color: #1F2328;
     height: 100%;
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 700;
-    font-style: normal;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    overflow-y: auto;
+    max-height: 100vh;
+    margin: 0 4px;
+    padding: 16px;
+    border: 1px solid #d0d7de;
+    border-radius: 6px;
+    word-wrap: break-word;
 }
 
 .topbar {
@@ -101,6 +109,11 @@ body {
     white-space: nowrap;
     margin-top: 2px;
     margin-bottom: 2px;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
 }
 
 .boxheading {
@@ -159,28 +172,34 @@ body {
 
 /* Code block styling */
 pre {
-    background-color: #1e1e1e;
+    background-color: #00171F;
     color: #FFFFFF;
-    padding: 1em;
+    padding: 16px;
     border-radius: 5px;
     overflow-x: auto;
     margin: 1em 0;
     width: 95%;
+    border: 2px solid black;
+    font-size: x-large;
+    font-family: "Ubuntu", sans-serif;
 }
 
 /* Inline code styling */
 code {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Ubuntu", sans-serif;
     padding: 0.2em 0.4em;
     color: #FFFFFF;
-    background-color: #1e1e1e;
-    border-radius: 3px;
+    background-color: #00171F;
+    border-radius: 5px;
+    font-size: x-large;
+    border: 2px solid black;
 }
 
 /* Reset padding for code inside pre blocks */
 pre code {
     padding: 0;
     background-color: transparent;
+    border: 0;
 }
 
 /* Add responsive styles */
