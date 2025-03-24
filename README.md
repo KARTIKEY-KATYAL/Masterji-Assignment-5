@@ -94,4 +94,4 @@ Try it out: [Markdown.md Preview](https://markdownmd.netlify.app/)
 
 ## 👥 Author
 
-Your Name - [Karttikey Katyal](https://github.com/KARTIKEY-KATYAL)
+My Github profile - [Karttikey Katyal](https://github.com/KARTIKEY-KATYAL)
